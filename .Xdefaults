@@ -15,7 +15,7 @@ Xft*dpi:                96
 Xft*antialias:          true
 Xft*hinting:            full
 
-urxvt*background:       rgba:0000/0000/0000/cccc
+urxvt*background:       rgba:0000/0000/0000/aaaa
 
 URxvt.transparent:   true
 URxvt.tintColor:     white

@@ -1,3 +1,5 @@
 i3
 neovim
+rxvt-unicode
 x2goserver
+xwallpaper
