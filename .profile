@@ -8,5 +8,8 @@ for DOTFILE in $(find $profiledir); do
 	fi
 done
 
+# Adds `~/.local/bin` and ~/bin to $PATH
+export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$HOME/bin/"
 # Start graphical server if i3 not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x i3 >/dev/null && exec startx
