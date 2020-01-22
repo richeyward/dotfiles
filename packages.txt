@@ -1,5 +1,10 @@
+curl
+firefox-esr
+fonts-powerline
 i3
 neovim
+ranger
 rxvt-unicode
 x2goserver
 xwallpaper
+zsh

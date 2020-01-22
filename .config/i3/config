@@ -7,8 +7,12 @@ font pango:monospace 8
 
 #---Startup programs---#
 exec --no-startup-id nm-applet
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 # floating_modifier $mod
+
+# Xcompmgr for transparency
+exec xcompmgr -c -f -n 
 
 #---Key Bindings---#
 # start a terminal

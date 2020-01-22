@@ -14,6 +14,8 @@ echo "[*] - Adding symlinks"
 ln -svf $PWD/.config ~
 ln -svf $PWD/.local/bin ~/.local
 ln -svf $PWD/.profile ~
+ln -svf $PWD/.profile ~/.bash_profile
+ln -svf $PWD/.profile ~/.zprofile
 ln -svf $PWD/.Xdefaults ~
 ln -svf $PWD/.Xdefaults ~/.Xresources
 echo
@@ -29,5 +31,3 @@ sudo apt install -y $(cat packages.txt | tr '\n' ' ')
 echo "[*] - Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo
-
-
