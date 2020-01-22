@@ -12,7 +12,7 @@ EOF
 
 echo "[*] - Adding symlinks"
 ln -svf $PWD/.config ~
-ln -svf $PWD/.local/bin ~/.local
+ln -svf $PWD/.local ~
 ln -svf $PWD/.profile ~
 ln -svf $PWD/.profile ~/.bash_profile
 ln -svf $PWD/.profile ~/.zprofile
