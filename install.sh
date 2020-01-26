@@ -20,6 +20,7 @@ ln -svf $PWD/.local ~
 ln -svf $PWD/.profile ~
 ln -svf $PWD/.profile ~/.bash_profile
 ln -svf $PWD/.profile ~/.zprofile
+ln -svf $PWD/.xprofile ~
 ln -svf $PWD/.Xdefaults ~
 ln -svf $PWD/.Xdefaults ~/.Xresources
 ln -svf $PWD/.zshrc ~/

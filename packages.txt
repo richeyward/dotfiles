@@ -1,3 +1,4 @@
+aptitude
 curl
 firefox-esr
 fonts-powerline
