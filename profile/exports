@@ -1,3 +1,4 @@
 export EDITOR="nvim"
 export TERMINAL="urxvt"
+export TERMINAL="st"
 export WM="i3"
