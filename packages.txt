@@ -10,8 +10,10 @@ neovim
 network-manager
 python3-pip
 ranger
+rsync
 rxvt-unicode
 task-laptop
+terminator
 x2goserver
 xcompmgr
 xwallpaper

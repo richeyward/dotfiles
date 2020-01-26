@@ -6,7 +6,7 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 #---Startup programs---#
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 # floating_modifier $mod
