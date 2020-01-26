@@ -22,13 +22,13 @@ ln -svf $PWD/.profile ~/.bash_profile
 ln -svf $PWD/.profile ~/.zprofile
 ln -svf $PWD/.Xdefaults ~
 ln -svf $PWD/.Xdefaults ~/.Xresources
+ln -svf $PWD/.zshrc ~/
 ln -svf $PWD/ohmyzsh ~/.oh-my-zsh
 echo
 
 echo "[*] - Installing packages"
 sudo apt -y install software-properties-common gpg
 sudo apt install -y $(cat packages.txt | tr '\n' ' ')
-
 
 echo "[*] - Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
