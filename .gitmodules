@@ -1,9 +1,9 @@
+[submodule "submodules/st"]
+	path = submodules/st
+	url = https://github.com/LukeSmithxyz/st.git
 [submodule "submodules/ohmyzsh"]
 	path = submodules/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
 [submodule "submodules/i3-gaps-deb"]
 	path = submodules/i3-gaps-deb
 	url = https://github.com/maestrogerardo/i3-gaps-deb.git
-[submodule "submodules/st"]
-	path = submodules/st
-	url = https://github.com/LukeSmithxyz/st.git
