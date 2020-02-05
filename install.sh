@@ -10,6 +10,8 @@ cat << EOF
 
 EOF
 
+mkdir -p submodules flags
+
 echo "[*] - Initializing Git submodules"
 git submodule init
 git submodule update
