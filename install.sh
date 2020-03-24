@@ -18,7 +18,8 @@ git submodule update
 
 echo "[*] - Adding symlinks"
 ln -svf $PWD/.config ~
-ln -svf $PWD/.local ~
+mkdir -p ~/.local
+ln -svf $PWD/.local/bin ~/.local
 ln -svf $PWD/.profile ~
 ln -svf $PWD/.profile ~/.bash_profile
 ln -svf $PWD/.profile ~/.zprofile
@@ -31,6 +32,7 @@ ln -svf $PWD/submodules/ohmyzsh ~/.oh-my-zsh
 echo
 
 echo "[*] - Installing packages"
+sudo apt update
 sudo apt install -y $(cat packages.txt | tr '\n' ' ')
 
 if [ ! -f flags/vundle ]; then
