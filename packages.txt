@@ -3,7 +3,10 @@ firefox-esr
 fonts-powerline
 i3
 neovim
+ranger
+rofi
 tig
+xcompmgr
 xorg
 xwallpaper
 zsh

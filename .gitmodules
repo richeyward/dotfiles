@@ -7,3 +7,6 @@
 [submodule "submodules/i3-gaps-deb"]
 	path = submodules/i3-gaps-deb
 	url = https://github.com/maestrogerardo/i3-gaps-deb.git
+[submodule "submodules/polybar"]
+	path = submodules/polybar
+	url = https://github.com/jaagr/polybar.git 
