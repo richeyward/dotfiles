@@ -2,7 +2,9 @@ aptitude
 firefox-esr
 fonts-powerline
 i3
+imagemagick
 neovim
+python3-pip
 ranger
 rofi
 tig
