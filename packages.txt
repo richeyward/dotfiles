@@ -4,9 +4,11 @@ fonts-powerline
 i3
 imagemagick
 neovim
+openssh-server
 python3-pip
 ranger
 rofi
+rsync
 tig
 xcompmgr
 xorg
