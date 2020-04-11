@@ -3,13 +3,16 @@ firefox-esr
 fonts-powerline
 i3
 imagemagick
+kitty
 neovim
 openssh-server
+python-pil
 python3-pip
 ranger
 rofi
 rsync
 tig
+w3m-img
 xcompmgr
 xorg
 xwallpaper

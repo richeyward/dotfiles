@@ -5,8 +5,9 @@
 
 setxrandr &		# Enable this if in a VM. Sets resolution
 #remaps &		# run the remaps script, switching caps/esc and more; check it for more info
-setbg &			# set the background with the `setbg` script
-xcompmgr &		# xcompmgr for transparency
+#setbg &			# set the background with the `setbg` script
+#xcompmgr &		# xcompmgr for transparency
+compton &
 #$STATUSBAR &		# script for updating the status bar
 #dunst &			# dunst for notifications
 #sxhkd -m 1 &		# Bind keys with sxhkd
