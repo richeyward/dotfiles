@@ -12,6 +12,7 @@ font pango:monospace 8
 
 #---Startup programs---#
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id wal -R
 #exec --no-startup-id nm-applet
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -35,8 +36,9 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
-bindsym $mod+w tayout tabbed
-bindsym $moe+e layout toggle split
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
 
 # change focus
 bindsym $mod+Left focus left
@@ -141,4 +143,20 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
 
+        # Pressing left will shrink the window’s width.
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+         # back to normal: Enter or Escape or $mod+r
+         bindsym Return mode "default"
+         bindsym Escape mode "default"
+         bindsym $mod+r mode "default"
+}
+ 
+bindsym $mod+r mode "resize"
