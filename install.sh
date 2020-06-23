@@ -14,8 +14,8 @@ mkdir -p submodules flags
 
 if [ ! -f flags/git_submodules ]; then
 	echo "[*] - Initializing Git submodules"
-	git submodule init
-	git submodule update
+	#git submodule init
+	git submodule update --init --recursive
 	touch flags/git_submodules
 fi
 
@@ -42,6 +42,12 @@ if [ ! -f flags/apt_install ]; then
 	sudo apt update
 	sudo apt install -y $(cat packages.txt | tr '\n' ' ')
 	touch flags/apt_install
+fi
+
+if [ ! -f flags/pip_install ]; then
+	echo "[*] - Installing pip packages"
+	pip3 install --user $(cat pip3.txt | tr '\n' ' ')
+	touch flags/pip_install
 fi
 
 for f in .install_scripts/*.sh; do

@@ -1,9 +1,12 @@
 aptitude
+compton
+feh
 firefox-esr
 fonts-powerline
 i3
 imagemagick
 kitty
+libreoffice-calc
 neovim
 openssh-server
 python-pil

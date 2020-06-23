@@ -89,14 +89,18 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # pywal
 (cat ~/.cache/wal/sequences)
+
+# Add whereami
+precmd() {
+    pwd > /tmp/whereami
+}
+
+# load dotfiles
+profiledir=$(dirname "$(realpath ~/.profile)")/profile
+for DOTFILE in $(find $profiledir);do
+    if [ -f "$DOTFILE" ]; then
+        source "$DOTFILE"
+    fi
+done
