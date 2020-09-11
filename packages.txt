@@ -1,4 +1,6 @@
 aptitude
+compton
+feh
 firefox-esr
 fonts-powerline
 i3
